@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "690111534933",
+    "firebase_url": "https://fileuploadfirebase-53d68.firebaseio.com",
+    "project_id": "fileuploadfirebase-53d68",
+    "storage_bucket": "fileuploadfirebase-53d68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690111534933:android:3e4e2f5d25565c62",
+        "android_client_info": {
+          "package_name": "com.example.kesar.fileuploadfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690111534933-74sitt9d9p9tqtihlcr90iiefkuambbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kesar.fileuploadfirebase",
+            "certificate_hash": "642518fc1befd1c43bced7f8fef8a7338f22c202"
+          }
+        },
+        {
+          "client_id": "690111534933-pfpdaksmdb69mo1ol087h0tobfhlv1pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJnN5FD4A2UTQ5uefC7SvR91r4GsG3HDU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690111534933-pfpdaksmdb69mo1ol087h0tobfhlv1pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
