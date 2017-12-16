@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">File Upload</string>
+    <string name="facebook_app_id">157783228315908</string>
+    <string name="fb_login_protocol_scheme">fb157783228315908</string>
+
 </resources>

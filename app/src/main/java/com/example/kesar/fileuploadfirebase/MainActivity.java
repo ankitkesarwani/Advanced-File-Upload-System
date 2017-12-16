@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
@@ -43,12 +45,16 @@ public class MainActivity extends AppCompatActivity {
     private TextView mProgressLabel;
     private TextView mSizeLabel;
 
+    private FirebaseAuth mAuth;
+
     private StorageTask mStorageTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
 
         mSelectBtn = (Button) findViewById(R.id.select_btn);
         mPauseBtn = (Button) findViewById(R.id.pause_btn);
@@ -113,6 +119,26 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser == null) {
+
+            updateUI();
+
+        }
+    }
+
+    private void updateUI() {
+
+        Intent intent = new Intent(MainActivity.this, StartActivity.class);
+        startActivity(intent);
+        finish();
 
     }
 
